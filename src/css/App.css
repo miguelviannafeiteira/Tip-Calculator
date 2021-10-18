@@ -1,0 +1,163 @@
+input::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+* {
+  font-family: Space Mono;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #00494d;
+  font-weight: 500;
+}
+
+button {
+  cursor: pointer;
+}
+
+.bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #c5e4e7;
+  height: 100vh;
+}
+
+.bg .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: white;
+  width: 1200px;
+  height: 550px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  -webkit-box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.esquerda {
+  margin: 0px 70px 50px 70px;
+}
+
+.esquerda input {
+  width: 400px;
+  border: none;
+  background: #f4fafa;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.esquerda input:focus {
+  outline: none;
+  border: 3px solid #26c0ab;
+}
+
+.esquerda .buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.esquerda .buttons input {
+  width: 115px;
+  border: none;
+  color: #00494d;
+}
+
+.esquerda .buttons input:focus {
+  outline: 3px solid #26c0ab;
+}
+
+.esquerda .buttons button {
+  background: #00494d;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.esquerda .buttons button:hover {
+  background: #26c0ab;
+  border: none;
+  color: #00494d;
+}
+
+.bg-direita {
+  background-color: #00494d;
+  border-radius: 10px;
+  margin-right: 30px;
+  height: 490px;
+  width: 500px;
+}
+
+.bg-direita button {
+  margin: 110px 0 0 40px;
+  background: #26c0ab;
+  border: none;
+  border-radius: 10px;
+  width: 400px;
+  height: 50px;
+  color: #00494d;
+}
+
+.bg-direita button:hover {
+  background: #c5e4e7;
+}
+
+.final {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.final p {
+  color: white;
+  margin-left: 30px;
+  margin-top: 50px;
+  height: auto;
+  font-size: 22px;
+}
+
+.final p p {
+  margin-top: 10px;
+  color: #7f9c9f;
+  font-size: 16px;
+  margin-left: 0;
+}
+
+.final span {
+  font-size: 60px;
+  color: #26c0ab;
+  margin-right: 60px;
+}
+
+.textoError {
+  margin: 0;
+  color: #ff7a7a;
+  font-size: 16px;
+}
+/*# sourceMappingURL=App.css.map */

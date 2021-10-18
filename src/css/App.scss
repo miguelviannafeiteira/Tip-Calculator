@@ -1,0 +1,137 @@
+input::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  appearance: none;
+}
+$dark-cyan: hsl(183, 100%, 15%);
+$white: hsl(0, 0%, 100%);
+$strong-cyan: hsl(172, 67%, 45%);
+$dark-grayish: hsl(184, 14%, 56%);
+$light-grayish: hsl(185, 41%, 84%);
+$light-grayish-2: hsl(189, 41%, 97%);
+$vermelho: hsl(0, 100%, 74%);
+
+* {
+  font-family: Space Mono;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: hsl(183, 100%, 15%);
+  font-weight: 500;
+}
+
+button {
+  cursor: pointer;
+}
+
+.bg {
+  display: flex;
+  align-items: center;
+  background-color: $light-grayish;
+  height: 100vh;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    background: $white;
+    width: 1200px;
+    height: 550px;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.esquerda {
+  margin: 0px 70px 50px 70px;
+
+  input {
+    width: 400px;
+    border: none;
+    background: $light-grayish-2;
+    border-radius: 10px;
+    padding: 10px;
+    &:focus {
+      outline: none;
+      border: 3px solid $strong-cyan;
+    }
+  }
+  .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    input {
+      width: 115px;
+      border: none;
+      color: $dark-cyan;
+      &:focus {
+        outline: 3px solid $strong-cyan;
+      }
+    }
+    button {
+      background: $dark-cyan;
+      padding: 10px;
+      border-radius: 10px;
+      color: $white;
+      &:hover {
+        background: $strong-cyan;
+        border: none;
+        color: $dark-cyan;
+      }
+    }
+  }
+}
+
+.bg-direita {
+  background-color: $dark-cyan;
+  border-radius: 10px;
+  margin-right: 30px;
+  height: 490px;
+  width: 500px;
+  button {
+    margin: 110px 0 0 40px;
+    background: $strong-cyan;
+    border: none;
+    border-radius: 10px;
+    width: 400px;
+    height: 50px;
+    color: $dark-cyan;
+    &:hover {
+      background: $light-grayish;
+    }
+  }
+}
+
+.final {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    color: $white;
+    margin-left: 30px;
+    margin-top: 50px;
+    height: auto;
+    font-size: 22px;
+    p {
+      margin-top: 10px;
+      color: hsl(184, 14%, 56%);
+      font-size: 16px;
+      margin-left: 0;
+    }
+  }
+  span {
+    font-size: 60px;
+    color: $strong-cyan;
+    margin-right: 60px;
+  }
+}
+
+.textoError {
+  margin: 0;
+  color: $vermelho;
+  font-size: 16px;
+}
